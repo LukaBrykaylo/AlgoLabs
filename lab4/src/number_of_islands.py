@@ -1,17 +1,3 @@
-islands_map = [
-    [1, 0, 1, 0, 0, 0, 1, 1, 1, 1],
-    [0, 0, 1, 0, 1, 0, 1, 0, 0, 0],
-    [1, 1, 1, 1, 0, 0, 1, 0, 0, 0],
-    [1, 0, 0, 1, 0, 1, 0, 0, 0, 0],
-    [1, 1, 1, 1, 0, 0, 0, 1, 1, 1],
-    [0, 1, 0, 1, 0, 0, 1, 1, 1, 1],
-    [0, 0, 0, 0, 0, 1, 1, 1, 0, 0],
-    [0, 0, 0, 1, 0, 0, 1, 1, 1, 0],
-    [1, 0, 1, 0, 1, 0, 0, 1, 0, 0],
-    [1, 1, 1, 1, 0, 0, 0, 1, 1, 1]
-]
-
-
 def number_of_islands(island_map):
     if not island_map:
         return 0
@@ -37,6 +23,3 @@ def dfs(i, j, island_map):
     dfs(i+1, j-1, island_map)
     dfs(i-1, j+1, island_map)
     dfs(i-1, j-1, island_map)
-
-
-# print(number_of_islands(islands_map))
