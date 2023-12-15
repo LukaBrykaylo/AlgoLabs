@@ -17,7 +17,7 @@ def longest_chain():
 
     for i in range(len(words)):
         for next_word in range(i):
-            if is_subsequence(words[next_word], words[i]):
+            if is_word2_has_word1(words[next_word], words[i]):
                 saved_results[i] = max(
                     saved_results[i], saved_results[next_word] + 1)
 
@@ -26,7 +26,7 @@ def longest_chain():
     return max(saved_results)
 
 
-def is_subsequence(word1, word2):
+def is_word2_has_word1(word1, word2):
     n, m = len(word1), len(word2)
     i = j = 0
 
